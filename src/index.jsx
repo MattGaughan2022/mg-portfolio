@@ -9,7 +9,7 @@ import "./index.scss";
 
 const MyPortfolioApp = () => {
   return (
-    <Container>
+    <Container className="mx-auto justify-content-md-center">
       <MainView />
     </Container>
   );

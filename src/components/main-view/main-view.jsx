@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { HomeView } from "../home-view/home-view";
 import { ContactView } from "../contact-view/contact-view";
 import { WorkView } from "../work-view/work-view";
@@ -16,9 +16,9 @@ export const MainView = () => {
             path="/home"
             element={
               <>
-                <Col md={5}>
+                <div className="compDiv">
                   <HomeView />
-                </Col>
+                </div>
               </>
             }
           />
@@ -26,9 +26,9 @@ export const MainView = () => {
             path="/contact"
             element={
               <>
-                <Col md={5}>
+                <div className="compDiv">
                   <ContactView />
-                </Col>
+                </div>
               </>
             }
           />
@@ -36,15 +36,24 @@ export const MainView = () => {
             path="/projects"
             element={
               <>
-                <Col md={5}>
+                <div className="compDiv">
                   <WorkView />
-                </Col>
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="/"
+            element={
+              <>
+                <Navigate to="/home" />
               </>
             }
           />
         </Routes>
-
-        <Row>This is the main view!</Row>
+        <Row className="mx-auto justify-content-md-center">
+          This is the main view!
+        </Row>
         <footer className="page-footer">
           <p>Find me on</p>
           <a href="https://www.linkedin.com/in/matt-gaughan-70243b214/">

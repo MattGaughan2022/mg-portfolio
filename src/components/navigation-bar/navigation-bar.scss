@@ -1,11 +1,12 @@
 .navButton {
+  // text-align: center;
   cursor: "pointer";
   border: 0;
-  height: 40px;
-  padding: 0.5rem;
+  height: 25px;
+  // padding: 0.5rem;
   border-radius: 10%;
   background-color: rgba(100, 255, 218, 255);
   color: black;
-  font-weight: 300;
+  font-weight: 600;
   transition: background-color 0.2s ease-in-out;
 }

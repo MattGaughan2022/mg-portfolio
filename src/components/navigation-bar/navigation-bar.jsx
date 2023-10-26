@@ -19,24 +19,32 @@ export const NavigationBar = () => {
   return (
     <Navbar data-bs-theme="dark" expand="lg">
       <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
-        <Navbar.Brand as={Link} to="/home">
+        {/* <Navbar.Brand as={Link} to="/home">
           <img src="img/logoMattGaughan.png" alt="logo" />{" "}
-        </Navbar.Brand>
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-        {/* <Navbar.Collapse id="basic-navbar-nav"/> */}
-        <Nav className="me-auto navbar">
-          <>
+        </Navbar.Brand> */}
+        <div style={{ borderColor: "white", borderWidth: "3px" }}>
+          <h1>
             <Nav.Link as={Link} to="/home">
-              <button className="navButton">Home</button>
+              Matt Gaughan
             </Nav.Link>
-            <Nav.Link as={Link} to={`/contact`}>
-              <button className="navButton">Contact Me</button>
-            </Nav.Link>
-            <Nav.Link as={Link} to={`/projects`}>
-              <button className="navButton">My Work</button>
-            </Nav.Link>
-          </>
-        </Nav>
+          </h1>
+        </div>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto navbar">
+            <>
+              <Nav.Link as={Link} to="/home">
+                <button className="navButton">Home</button>
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                <button className="navButton">Contact Me</button>
+              </Nav.Link>
+              <Nav.Link as={Link} to="/projects">
+                <button className="navButton">My Work</button>
+              </Nav.Link>
+            </>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
