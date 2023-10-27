@@ -2,7 +2,7 @@
   "name": "mg-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MattGaughan2022.github.io/{mg-portfolio}",
+  "homepage": "https://MattGaughan2022.github.io/mg-portfolio/home",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
