@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const NavigationBar = () => {
   const [isActive, setIsActive] = useState(false);
 
-  let location = useLocation();
+  // let location = useLocation();
 
   const toggleActiveClass = () => {
     setIsActive(!isActive);
