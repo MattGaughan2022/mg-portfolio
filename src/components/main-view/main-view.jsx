@@ -44,7 +44,7 @@ export const MainView = () => {
             }
           />
           <Route
-            path="/"
+            path="/mg-portfolio/"
             element={
               <>
                 <Navigate to="/mg-portfolio/home" />
