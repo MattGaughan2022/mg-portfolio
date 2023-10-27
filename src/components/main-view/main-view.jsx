@@ -8,7 +8,7 @@ import "./main-view.scss";
 
 export const MainView = () => {
   return (
-    <BrowserRouter basename="/mg-portfolio/">
+    <BrowserRouter>
       <NavigationBar />
       <Row>
         <Routes>
