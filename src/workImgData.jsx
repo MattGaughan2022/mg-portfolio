@@ -1,6 +1,9 @@
 //for ghpages, files must be named sourced from './assets/<folder>' assuming assets is in public
 //does not work for parcel
 //"homepage": "https://mattgaughan2022.github.io/mg-portfolio/", for ghpages
+//using parcel plugin to import all photos
+
+import * as images from "./public/assets/";
 
 export const data = [
   [
@@ -9,7 +12,7 @@ export const data = [
       id: 1,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "./public/assets/angularFlix/homePage.png",
+      img: `${images}angularFlix/homePage.png`,
     },
     {
       id: 2,
