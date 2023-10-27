@@ -1,9 +1,70 @@
+@media (width > 768px) {
+  .header1 {
+    color: #ccd6f6;
+  }
+  .header2 {
+    color: #ccd6f6;
+    display: none;
+  }
+}
+@media (width <= 768px) {
+  .header1 {
+    color: #ccd6f6;
+    display: none;
+  }
+  .header2 {
+    color: #ccd6f6;
+    font-size: 60px;
+  }
+}
+.pageContainer {
+  max-width: 1600px;
+}
+
 .card-container {
   position: relative;
+  // margin-left: 6px;
+  // margin-right: 6px;
   height: 440px;
 }
-.leftBtn,
-.rightBtn {
+.leftBtnDiv {
+  display: block;
+  position: absolute;
+  left: 1%;
   cursor: pointer;
-  padding: "10px";
+  height: 91%;
+  width: 25px;
+  background-color: rgba(100, 255, 218, 255);
+  opacity: 1;
+}
+.rightBtnDiv {
+  display: block;
+  position: absolute;
+  right: 1.7%;
+  cursor: pointer;
+  height: 91%;
+  width: 25px;
+  background-color: rgba(100, 255, 218, 255);
+  opacity: 1;
+  z-index: 5;
+}
+.leftBtn {
+  cursor: pointer;
+  color: rgba(10, 25, 47, 255);
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 1;
+  // color: black;
+}
+.rightBtn {
+  color: rgba(10, 25, 47, 255);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }

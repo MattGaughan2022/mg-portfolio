@@ -54,7 +54,7 @@ export const MainView = () => {
         <Row className="mx-auto justify-content-md-center">
           This is the main view!
         </Row>
-        <footer className="page-footer">
+        <footer style={{ paddingBottom: "60px" }} className="page-footer">
           <p>Find me on</p>
           <a href="https://www.linkedin.com/in/matt-gaughan-70243b214/">
             <img src="img/iconLinkedIn.png" alt="LinkedIn" />

@@ -23,7 +23,7 @@ export const WorkView = () => {
   };
 
   const slideRight = (n) => {
-    if (index[n] + 1 <= data[0].length - 1) {
+    if (index[n] + 1 <= data[n].length - 1) {
       const arr = [...index];
       arr[n] = arr[n] + 1;
       setIndex(arr);
@@ -31,92 +31,257 @@ export const WorkView = () => {
   };
 
   return (
-    <Container>
-      <h1 style={{ fontSize: "180px", textAlign: "left" }}>Porfolio</h1>
-      <Row>
+    <Container className="pageContainer">
+      <h1 className="header1" style={{ fontSize: "180px", textAlign: "left" }}>
+        Porfolio
+      </h1>
+      <h2 className="header2">Portfolio</h2>
+      <Row className="text-center">
         <Col
           xs={12}
           md={6}
-          lg={4}
+          lg={6}
+          xl={4}
           className="angularApp card-container mx-auto justify-content-md-center"
         >
-          <FontAwesomeIcon
-            onClick={() => slideLeft(0)}
-            className="leftBtn"
-            icon={faChevronLeft}
-            style={{}}
-          />
-          <FontAwesomeIcon
-            onClick={() => slideRight(0)}
-            className="rightBtn"
-            icon={faChevronRight}
-            style={{ marginLeft: "10px" }}
-          />
+          {/* justify-content-md-center */}
           {data[0].map((pic, n) => {
+            let ratio = "desktop";
             let position =
               n > index[0]
                 ? "nextCard"
                 : n === index[0]
                 ? "activeCard"
                 : "prevCard";
-            return <WorkCard key={pic.id} {...pic} cardStyle={position} />;
+            return (
+              <WorkCard
+                picRatio={ratio}
+                key={pic.id}
+                {...pic}
+                cardStyle={position}
+              />
+            );
           })}
+          <div className="leftBtnDiv" onClick={() => slideLeft(0)}>
+            <FontAwesomeIcon
+              onClick={() => slideLeft(0)}
+              className="leftBtn"
+              icon={faChevronLeft}
+              style={{}}
+            />
+          </div>
+          <div className="rightBtnDiv" onClick={() => slideRight(0)}>
+            <FontAwesomeIcon
+              onClick={() => slideRight(0)}
+              className="rightBtn"
+              icon={faChevronRight}
+            />
+          </div>
         </Col>
+        {/* v====================REACT PROJECT====================v */}
         <Col
           xs={12}
           md={6}
-          lg={4}
+          lg={6}
+          xl={4}
           className="nodeApi card-container mx-auto justify-content-md-center"
         >
-          <FontAwesomeIcon
-            onClick={() => slideLeft(1)}
-            className="leftBtn"
-            icon={faChevronLeft}
-            style={{}}
-          />
-          <FontAwesomeIcon
-            onClick={() => slideRight(1)}
-            className="rightBtn"
-            icon={faChevronRight}
-            style={{ marginLeft: "10px" }}
-          />
           {data[1].map((pic, n) => {
+            let ratio = "desktop";
             let position =
               n > index[1]
                 ? "nextCard"
                 : n === index[1]
                 ? "activeCard"
                 : "prevCard";
-            return <WorkCard key={pic.id} {...pic} cardStyle={position} />;
+            return (
+              <WorkCard
+                picRatio={ratio}
+                key={pic.id}
+                {...pic}
+                cardStyle={position}
+              />
+            );
           })}
+          <div className="leftBtnDiv" onClick={() => slideLeft(1)}>
+            <FontAwesomeIcon
+              onClick={() => slideLeft(1)}
+              className="leftBtn"
+              icon={faChevronLeft}
+              style={{}}
+            />
+          </div>
+          <div className="rightBtnDiv" onClick={() => slideRight(1)}>
+            <FontAwesomeIcon
+              onClick={() => slideRight(1)}
+              className="rightBtn"
+              icon={faChevronRight}
+            />
+          </div>
         </Col>
+        {/* v====================MOVIE API PROJECT====================v  */}
         <Col
           xs={12}
           md={6}
-          lg={4}
+          lg={6}
+          xl={4}
           className="reactApp card-container mx-auto justify-content-md-center"
         >
-          <FontAwesomeIcon
-            onClick={() => slideLeft(2)}
-            className="leftBtn"
-            icon={faChevronLeft}
-            style={{}}
-          />
-          <FontAwesomeIcon
-            onClick={() => slideRight(2)}
-            className="rightBtn"
-            icon={faChevronRight}
-            style={{ marginLeft: "10px" }}
-          />
-          {data[1].map((pic, n) => {
+          {data[2].map((pic, n) => {
+            let ratio = "desktop";
             let position =
               n > index[2]
                 ? "nextCard"
                 : n === index[2]
                 ? "activeCard"
                 : "prevCard";
-            return <WorkCard key={pic.id} {...pic} cardStyle={position} />;
+            return (
+              <WorkCard
+                picRatio={ratio}
+                key={pic.id}
+                {...pic}
+                cardStyle={position}
+              />
+            );
           })}
+          <div className="leftBtnDiv" onClick={() => slideLeft(2)}>
+            <FontAwesomeIcon
+              onClick={() => slideLeft(2)}
+              className="leftBtn"
+              icon={faChevronLeft}
+              style={{}}
+            />
+          </div>
+          <div className="rightBtnDiv" onClick={() => slideRight(2)}>
+            <FontAwesomeIcon
+              onClick={() => slideRight(2)}
+              className="rightBtn"
+              icon={faChevronRight}
+            />
+          </div>
+        </Col>
+        {/* v====================MEET APP====================v  */}
+        <Col
+          xs={12}
+          md={6}
+          lg={6}
+          xl={4}
+          className="reactApp card-container mx-auto justify-content-md-center"
+        >
+          {data[3].map((pic, n) => {
+            let ratio = "desktop";
+            let position =
+              n > index[3]
+                ? "nextCard"
+                : n === index[3]
+                ? "activeCard"
+                : "prevCard";
+            return (
+              <WorkCard
+                picRatio={ratio}
+                key={pic.id}
+                {...pic}
+                cardStyle={position}
+              />
+            );
+          })}
+          <div className="leftBtnDiv" onClick={() => slideLeft(3)}>
+            <FontAwesomeIcon
+              onClick={() => slideLeft(3)}
+              className="leftBtn"
+              icon={faChevronLeft}
+              style={{}}
+            />
+          </div>
+          <div className="rightBtnDiv" onClick={() => slideRight(3)}>
+            <FontAwesomeIcon
+              onClick={() => slideRight(3)}
+              className="rightBtn"
+              icon={faChevronRight}
+            />
+          </div>
+        </Col>
+        {/* v====================CHAT (MOBILE) APP====================v  */}
+        <Col
+          xs={12}
+          md={6}
+          lg={6}
+          xl={4}
+          className="reactApp card-container mx-auto justify-content-md-center"
+        >
+          {data[4].map((pic, n) => {
+            let ratio = "mobile";
+            let position =
+              n > index[4]
+                ? "nextCard"
+                : n === index[4]
+                ? "activeCard"
+                : "prevCard";
+            return (
+              <WorkCard
+                picRatio={ratio}
+                key={pic.id}
+                {...pic}
+                cardStyle={position}
+              />
+            );
+          })}
+          <div className="leftBtnDiv" onClick={() => slideLeft(4)}>
+            <FontAwesomeIcon
+              onClick={() => slideLeft(4)}
+              className="leftBtn"
+              icon={faChevronLeft}
+              style={{}}
+            />
+          </div>
+          <div className="rightBtnDiv" onClick={() => slideRight(4)}>
+            <FontAwesomeIcon
+              onClick={() => slideRight(4)}
+              className="rightBtn"
+              icon={faChevronRight}
+            />
+          </div>
+        </Col>
+        {/* v====================POKEDEX (LOCAL) APP====================v  */}
+        <Col
+          xs={12}
+          md={6}
+          lg={6}
+          xl={4}
+          className="reactApp card-container mx-auto justify-content-md-center"
+        >
+          {data[5].map((pic, n) => {
+            let ratio = "desktop";
+            let position =
+              n > index[5]
+                ? "nextCard"
+                : n === index[5]
+                ? "activeCard"
+                : "prevCard";
+            return (
+              <WorkCard
+                picRatio={ratio}
+                key={pic.id}
+                {...pic}
+                cardStyle={position}
+              />
+            );
+          })}
+          <div className="leftBtnDiv" onClick={() => slideLeft(5)}>
+            <FontAwesomeIcon
+              onClick={() => slideLeft(5)}
+              className="leftBtn"
+              icon={faChevronLeft}
+              style={{}}
+            />
+          </div>
+          <div className="rightBtnDiv" onClick={() => slideRight(5)}>
+            <FontAwesomeIcon
+              onClick={() => slideRight(5)}
+              className="rightBtn"
+              icon={faChevronRight}
+            />
+          </div>
         </Col>
       </Row>
     </Container>
