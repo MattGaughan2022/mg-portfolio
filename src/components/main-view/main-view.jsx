@@ -52,15 +52,23 @@ export const MainView = () => {
           />
         </Routes>
         <Row className="mx-auto justify-content-md-center">
-          This is the main view!
+          {/* This is the main view! */}
         </Row>
         <footer style={{ paddingBottom: "60px" }} className="page-footer">
           <p>Find me on</p>
           <a href="https://www.linkedin.com/in/matt-gaughan-70243b214/">
-            <img src="img/iconLinkedIn.png" alt="LinkedIn" />
+            <img
+              src="img/iconLinkedIn.png"
+              alt="LinkedIn"
+              style={{ backgroundColor: "#64ffda" }}
+            />
           </a>
           <a href="https://github.com/MattGaughan2022">
-            <img src="img/iconGithub.png" alt="GitHub" />
+            <img
+              src="img/iconGithub.png"
+              alt="GitHub"
+              style={{ backgroundColor: "#64ffda" }}
+            />
           </a>
         </footer>
       </Row>

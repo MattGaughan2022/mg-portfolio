@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./navigation-bar.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const NavigationBar = () => {
   const [isActive, setIsActive] = useState(false);
+
+  let location = useLocation();
 
   const toggleActiveClass = () => {
     setIsActive(!isActive);
@@ -32,17 +34,21 @@ export const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto navbar">
-            <>
-              <Nav.Link as={Link} to="/home">
-                <button className="navButton">Home</button>
-              </Nav.Link>
-              <Nav.Link as={Link} to="/contact">
-                <button className="navButton">Contact Me</button>
-              </Nav.Link>
-              <Nav.Link as={Link} to="/projects">
-                <button className="navButton">My Work</button>
-              </Nav.Link>
-            </>
+            {location.pathname !== "/home" ? (
+              <>
+                {/* <Nav.Link as={Link} to="/home">
+                  <button className="navButton">Home</button>
+                </Nav.Link> */}
+                {/* <Nav.Link as={Link} to="/contact">
+                  <button className="navButton">Contact Me</button>
+                </Nav.Link> */}
+                {/* <Nav.Link as={Link} to="/projects">
+                  <button className="navButton">My Work</button>
+                </Nav.Link> */}
+              </>
+            ) : (
+              <></>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
