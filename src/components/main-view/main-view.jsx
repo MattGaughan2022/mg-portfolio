@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
   Navigate,
-  Redirect,
+  useNavigate,
 } from "react-router-dom";
 import { Row } from "react-bootstrap";
 import { HomeView } from "../home-view/home-view";
@@ -13,6 +13,8 @@ import { NavigationBar } from "../navigation-bar/navigation-bar";
 import "./main-view.scss";
 
 export const MainView = () => {
+  const navigate = useNavigate();
+
   return (
     <BrowserRouter>
       <NavigationBar />
@@ -57,7 +59,7 @@ export const MainView = () => {
               </>
             }
           />
-          <Redirect to="/mg-portfolio/home" />
+          <Navigate to="/mg-portfolio/home" />
         </Routes>
         <Row className="mx-auto justify-content-md-center">
           {/* This is the main view! */}
