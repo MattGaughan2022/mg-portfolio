@@ -1,5 +1,6 @@
 //for ghpages, files must be named sourced from './assets/<folder>' assuming assets is in public
 //does not work for parcel
+//"homepage": "https://mattgaughan2022.github.io/mg-portfolio/", for ghpages
 
 export const data = [
   [

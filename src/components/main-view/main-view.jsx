@@ -13,7 +13,7 @@ export const MainView = () => {
       <Row>
         <Routes>
           <Route
-            path="/mg-portfolio/home"
+            path="/"
             element={
               <>
                 <div className="compDiv">
@@ -23,7 +23,7 @@ export const MainView = () => {
             }
           />
           <Route
-            path="/mg-portfolio/contact"
+            path="/contact"
             element={
               <>
                 <div className="compDiv">
@@ -34,7 +34,7 @@ export const MainView = () => {
           />
 
           <Route
-            path="/mg-portfolio/projects"
+            path="/projects"
             element={
               <>
                 <div className="compDiv">
@@ -44,10 +44,10 @@ export const MainView = () => {
             }
           />
           <Route
-            path="/mg-portfolio/"
+            path="/"
             element={
               <>
-                <Navigate to="/mg-portfolio/home" />
+                <Navigate to="/" />
               </>
             }
           />

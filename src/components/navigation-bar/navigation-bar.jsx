@@ -27,7 +27,7 @@ export const NavigationBar = () => {
         {/* hello */}
         <div style={{ borderColor: "white", borderWidth: "3px" }}>
           <h1>
-            <Nav.Link as={Link} to="/mg-portfolio/home">
+            <Nav.Link as={Link} to="/">
               Matt Gaughan
             </Nav.Link>
           </h1>
