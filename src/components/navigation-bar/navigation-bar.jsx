@@ -26,7 +26,7 @@ export const NavigationBar = () => {
         </Navbar.Brand> */}
         <div style={{ borderColor: "white", borderWidth: "3px" }}>
           <h1>
-            <Nav.Link as={Link} to="/home">
+            <Nav.Link as={Link} to="/mg-portfolio/home">
               Matt Gaughan
             </Nav.Link>
           </h1>
