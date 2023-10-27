@@ -1,3 +1,5 @@
+//for ghpages, files must be named sourced from './assets/<folder>' assuming assets is in public
+
 export const data = [
   [
     {

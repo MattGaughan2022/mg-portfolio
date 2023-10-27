@@ -31,26 +31,26 @@ export const NavigationBar = () => {
             </Nav.Link>
           </h1>
         </div>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto navbar">
-            {location.pathname !== "/mg-portfolio/home" ? (
-              <>
-                {/* <Nav.Link as={Link} to="/home">
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav"> */}
+        <Nav className="me-auto navbar">
+          {location.pathname !== "/mg-portfolio/home" ? (
+            <>
+              {/* <Nav.Link as={Link} to="/home">
                   <button className="navButton">Home</button>
                 </Nav.Link> */}
-                {/* <Nav.Link as={Link} to="/contact">
+              {/* <Nav.Link as={Link} to="/contact">
                   <button className="navButton">Contact Me</button>
                 </Nav.Link> */}
-                {/* <Nav.Link as={Link} to="/projects">
+              {/* <Nav.Link as={Link} to="/projects">
                   <button className="navButton">My Work</button>
                 </Nav.Link> */}
-              </>
-            ) : (
-              <></>
-            )}
-          </Nav>
-        </Navbar.Collapse>
+            </>
+          ) : (
+            <></>
+          )}
+        </Nav>
+        {/* </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );
