@@ -31,6 +31,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "staticFiles": {
+    "staticPath": "public/",
+    "watcherGlob": "**"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -56,9 +60,5 @@
     "parcel-plugin-static-files-copy": "^2.6.0",
     "process": "^0.11.10",
     "sass": "^1.69.4"
-  },
-  "staticFiles": {
-    "staticPath": "public",
-    "watcherGlob": "**"
   }
 }
