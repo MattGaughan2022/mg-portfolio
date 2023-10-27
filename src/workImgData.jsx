@@ -42,19 +42,19 @@ export const data = [
       id: 1,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "./assets/reactFlix/home.png",
+      img: "assets/reactFlix/home.png",
     },
     {
       id: 2,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "./assets/reactFlix/filtered.png",
+      img: "../../assets/reactFlix/filtered.png",
     },
     {
       id: 3,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "./assets/reactFlix/details.png",
+      img: "../public/assets/reactFlix/details.png",
     },
     {
       id: 4,
