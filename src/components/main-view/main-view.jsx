@@ -32,6 +32,7 @@ export const MainView = () => {
               </>
             }
           />
+
           <Route
             path="/mg-portfolio/projects"
             element={
