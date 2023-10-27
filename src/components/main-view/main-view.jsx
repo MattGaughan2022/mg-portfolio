@@ -1,10 +1,4 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Row } from "react-bootstrap";
 import { HomeView } from "../home-view/home-view";
 import { ContactView } from "../contact-view/contact-view";
@@ -13,8 +7,6 @@ import { NavigationBar } from "../navigation-bar/navigation-bar";
 import "./main-view.scss";
 
 export const MainView = () => {
-  const navigate = useNavigate();
-
   return (
     <BrowserRouter>
       <NavigationBar />
@@ -59,7 +51,6 @@ export const MainView = () => {
               </>
             }
           />
-          <Navigate to="/mg-portfolio/home" />
         </Routes>
         <Row className="mx-auto justify-content-md-center">
           {/* This is the main view! */}
