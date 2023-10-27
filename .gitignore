@@ -12,7 +12,6 @@
 
 # misc
 
-.cache
 .parcel-cache
 
 .DS_Store
