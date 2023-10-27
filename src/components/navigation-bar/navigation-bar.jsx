@@ -26,31 +26,31 @@ export const NavigationBar = () => {
         </Navbar.Brand> */}
         <div style={{ borderColor: "white", borderWidth: "3px" }}>
           <h1>
-            <Nav.Link as={Link} to="/mg-portfolio/home">
+            <Nav.Link as={Link} to="/home">
               Matt Gaughan
             </Nav.Link>
           </h1>
         </div>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav"> */}
-        <Nav className="me-auto navbar">
-          {location.pathname !== "/mg-portfolio/home" ? (
-            <>
-              {/* <Nav.Link as={Link} to="/home">
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto navbar">
+            {location.pathname !== "/mg-portfolio/home" ? (
+              <>
+                <Nav.Link as={Link} to="/home">
                   <button className="navButton">Home</button>
-                </Nav.Link> */}
-              {/* <Nav.Link as={Link} to="/contact">
+                </Nav.Link>
+                <Nav.Link as={Link} to="/contact">
                   <button className="navButton">Contact Me</button>
-                </Nav.Link> */}
-              {/* <Nav.Link as={Link} to="/projects">
+                </Nav.Link>
+                <Nav.Link as={Link} to="/projects">
                   <button className="navButton">My Work</button>
-                </Nav.Link> */}
-            </>
-          ) : (
-            <></>
-          )}
-        </Nav>
-        {/* </Navbar.Collapse> */}
+                </Nav.Link>
+              </>
+            ) : (
+              <></>
+            )}
+          </Nav>
+        </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );

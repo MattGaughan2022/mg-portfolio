@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  Redirect,
+} from "react-router-dom";
 import { Row } from "react-bootstrap";
 import { HomeView } from "../home-view/home-view";
 import { ContactView } from "../contact-view/contact-view";
@@ -51,6 +57,7 @@ export const MainView = () => {
               </>
             }
           />
+          <Redirect to="/mg-portfolio/home" />
         </Routes>
         <Row className="mx-auto justify-content-md-center">
           {/* This is the main view! */}
