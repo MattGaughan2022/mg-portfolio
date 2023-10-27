@@ -1,4 +1,5 @@
 //for ghpages, files must be named sourced from './assets/<folder>' assuming assets is in public
+//does not work for parcel
 
 export const data = [
   [
@@ -7,25 +8,25 @@ export const data = [
       id: 1,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "./assets/angularFlix/homePage.png",
+      img: "./public/assets/angularFlix/homePage.png",
     },
     {
       id: 2,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "./assets/angularFlix/details.png",
+      img: "public/assets/angularFlix/details.png",
     },
     {
       id: 3,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "./assets/angularFlix/login.png",
+      img: "/public/assets/angularFlix/login.png",
     },
     {
       id: 4,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "./assets/angularFlix/profile.png",
+      img: "../assets/angularFlix/profile.png",
     },
     {
       id: 5,
