@@ -10,13 +10,13 @@ export const data = [
       id: 1,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "src/assets/angularFlix/homePage.png",
+      img: "../assets/angularFlix/homePage.png",
     },
     {
       id: 2,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "src/assets/angularFlix/details.png",
+      img: "./assets/angularFlix/details.png",
     },
     {
       id: 3,
@@ -28,13 +28,13 @@ export const data = [
       id: 4,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "src/assets/angularFlix/profile.png",
+      img: "assets/angularFlix/profile.png",
     },
     {
       id: 5,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "src/assets/angularFlix/updateProf.png",
+      img: "angularFlix/updateProf.png",
     },
   ],
   [

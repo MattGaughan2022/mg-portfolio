@@ -32,7 +32,14 @@
     "eject": "react-scripts eject"
   },
   "staticFiles": {
-    "staticPath": "public/",
+    "staticPath": [
+      "src/public/assets/angularFlix",
+      "src/public/assets/chatApp",
+      "src/public/assets/meetApp",
+      "src/public/assets/movieAPI",
+      "src/public/assets/pokedex",
+      "src/public/assets/reactFlix"
+    ],
     "watcherGlob": "**"
   },
   "eslintConfig": {
