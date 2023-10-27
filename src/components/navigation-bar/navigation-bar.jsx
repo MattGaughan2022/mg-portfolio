@@ -24,6 +24,7 @@ export const NavigationBar = () => {
         {/* <Navbar.Brand as={Link} to="/home">
           <img src="img/logoMattGaughan.png" alt="logo" />{" "}
         </Navbar.Brand> */}
+        {/* hello */}
         <div style={{ borderColor: "white", borderWidth: "3px" }}>
           <h1>
             <Nav.Link as={Link} to="/mg-portfolio/home">
