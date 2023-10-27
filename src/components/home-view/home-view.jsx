@@ -20,7 +20,7 @@ export const HomeView = () => {
         <h1>Hello, World!</h1>
         <p>My name it Matt Gaughan.</p>
         <p>I am a computer engineer from Boston. </p>
-        <Nav.Link as={Link} to="/projects">
+        <Nav.Link as={Link} to="/mg-portfolio/projects">
           <AwesomeButton type="primary" className="projectBtn">
             Projects
           </AwesomeButton>

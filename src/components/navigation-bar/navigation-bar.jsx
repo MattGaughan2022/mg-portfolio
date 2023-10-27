@@ -26,7 +26,7 @@ export const NavigationBar = () => {
         </Navbar.Brand> */}
         <div style={{ borderColor: "white", borderWidth: "3px" }}>
           <h1>
-            <Nav.Link as={Link} to="/home">
+            <Nav.Link as={Link} to="/mg-portfolio/home">
               Matt Gaughan
             </Nav.Link>
           </h1>
@@ -34,7 +34,7 @@ export const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto navbar">
-            {location.pathname !== "/home" ? (
+            {location.pathname !== "/mg-portfolio/home" ? (
               <>
                 {/* <Nav.Link as={Link} to="/home">
                   <button className="navButton">Home</button>
