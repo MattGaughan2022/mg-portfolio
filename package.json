@@ -2,7 +2,6 @@
   "name": "mg-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mattgaughan2022.github.io/mg-portfolio/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
@@ -27,7 +26,7 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
