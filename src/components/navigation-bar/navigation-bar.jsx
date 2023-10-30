@@ -42,18 +42,22 @@ export const NavigationBar = () => {
             {location.pathname !== "/home" ? (
               <>
                 <Nav.Link as={Link} to="/home">
-                  <img
-                    src={home}
-                    className="imgBtn"
-                    alt="button to home page"
-                  />
+                  <Button>
+                    <img
+                      src={home}
+                      className="imgBtn"
+                      alt="button to home page"
+                    />
+                  </Button>
                 </Nav.Link>
                 <Nav.Link as={Link} to="/about">
-                  <img
-                    src={about}
-                    className="imgBtn"
-                    alt="button to about page"
-                  />
+                  <button>
+                    <img
+                      src={about}
+                      className="imgBtn"
+                      alt="button to about page"
+                    />
+                  </button>
                 </Nav.Link>
                 {/* <Nav.Link as={Link} to="/projects">
                   <button className="navButton">My Work</button>
