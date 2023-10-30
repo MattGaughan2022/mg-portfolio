@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 
-import "./navigation-bar.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./navigation-bar.scss";
 
 //img import
 import home from "./recoHome.png";
@@ -30,7 +30,7 @@ export const NavigationBar = () => {
           <img src="img/logoMattGaughan.png" alt="logo" />{" "}
         </Navbar.Brand> */}
         {/* hello */}
-        <div style={{ borderColor: "white", borderWidth: "3px" }}>
+        <div>
           <h1>
             <Nav.Link as={Link} to="/">
               Matt Gaughan
