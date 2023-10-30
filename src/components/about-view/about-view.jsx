@@ -1,6 +1,6 @@
 import { Row } from "react-bootstrap";
 //img import
-import mejpg from "./about-view";
+import mejpg from "./me.jpg";
 
 export const AboutView = () => {
   return (
