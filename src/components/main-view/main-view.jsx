@@ -8,7 +8,7 @@ import "./main-view.scss";
 
 //img imports
 import linkedinIco from "../src/img/iconLinkedIn.png";
-import gitIco from ".../src/img/iconGithub.png";
+import gitIco from "../src/img/iconGithub.png";
 
 export const MainView = () => {
   return (
