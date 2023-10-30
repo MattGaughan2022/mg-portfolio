@@ -4,12 +4,38 @@
 //used parcel plugin to import all photos, but instead scrapped to just moving files out of '/public'
 
 // ===================IMPORTS===================
-
+//angular
 import angHome from "../public/assets/angularFlix/homePage.png";
 import angDetails from "../public/assets/angularFlix/details.png";
 import angLogin from "../public/assets/angularFlix/login.png";
 import angProf from "../public/assets/angularFlix/profile.png";
 import angUpdate from "../public/assets/angularFlix/updateProf.png";
+
+//react
+import reactDetails from "../public/assets/reactFlix/details.png";
+import reactHome from "../public/assets/reactFlix/home.png";
+import reactFiltered from "../public/assets/reactFlix/filtered.png";
+import reactSignup from "../public/assets/reactFlix/signUp.png";
+import reactProf from "../public/assets/reactFlix/profile.png";
+import reactUpdate from "../public/assets/reactFlix/updateProf.png";
+
+//api
+import apiHeroku from "../public/assets/movieAPI/herokuHost.png";
+import apiMongo from "../public/assets/movieAPI/mongoDB.png";
+import apiPostman from "../public/assets/movieAPI/postman2.png";
+
+//meet app
+import meetHome from "../public/assets/meetApp/home.png";
+import meetGraph from "../public/assets/meetApp/graph.png";
+import meetChart from "../public/assets/meetApp/chart.png";
+
+//phone chat app
+import chatChat from "../public/assets/chatApp/chat.png";
+import chatStart from "../public/assets/chatApp/start.png";
+
+//pokedex
+import pokedexHome from "../public/assets/pokedex/home.png";
+import pokedexMankey from "../public/assets/pokedex/mankey.TheMonkeyPokemon.png";
 
 export const data = [
   [
@@ -51,37 +77,37 @@ export const data = [
       id: 1,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "reactFlix/home.png",
+      img: reactHome,
     },
     {
       id: 2,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "filtered.png",
+      img: reactFiltered,
     },
     {
       id: 3,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "reactFlix/details.png",
+      img: reactDetails,
     },
     {
       id: 4,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "./assets/reactFlix/signUp.png",
+      img: reactSignup,
     },
     {
       id: 5,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "./assets/reactFlix/profile.png",
+      img: reactProf,
     },
     {
       id: 6,
       name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: "./assets/reactFlix/updateProf.png",
+      img: reactUpdate,
     },
   ],
   [
@@ -90,19 +116,19 @@ export const data = [
       id: 1,
       name: "MovieDB (Node API)",
       link: "https://github.com/MattGaughan2022/nodeMovieAPI",
-      img: "./assets/movieAPI/herokuHost.png",
+      img: apiHeroku,
     },
     {
       id: 2,
       name: "MovieDB (Node API)",
       link: "https://github.com/MattGaughan2022/nodeMovieAPI",
-      img: "./assets/movieAPI/mongoDB.png",
+      img: apiMongo,
     },
     {
       id: 3,
       name: "MovieDB (Node API)",
       link: "https://github.com/MattGaughan2022/nodeMovieAPI",
-      img: "./assets/movieAPI/postman2.png",
+      img: apiPostman,
     },
   ],
   [
@@ -111,19 +137,19 @@ export const data = [
       id: 1,
       name: "Meet App (Google API)",
       link: "https://github.com/MattGaughan2022/meetApp",
-      img: "./assets/meetApp/home.png",
+      img: meetHome,
     },
     {
       id: 2,
       name: "Meet App (Google API)",
       link: "https://github.com/MattGaughan2022/meetApp",
-      img: "./assets/meetApp/chart.png",
+      img: meetChart,
     },
     {
       id: 3,
       name: "Meet App (Google API)",
       link: "https://github.com/MattGaughan2022/meetApp",
-      img: "./assets/meetApp/graph.png",
+      img: meetGraph,
     },
   ],
   [
@@ -132,13 +158,13 @@ export const data = [
       id: 1,
       name: "Chat App (React Native)",
       link: "https://github.com/MattGaughan2022/chat-demo",
-      img: "./assets/chatApp/start.png",
+      img: chatStart,
     },
     {
       id: 2,
       name: "Chat App (React Native)",
       link: "https://github.com/MattGaughan2022/chat-demo",
-      img: "./assets/chatApp/chat.png",
+      img: chatChat,
     },
   ],
   [
@@ -147,13 +173,13 @@ export const data = [
       id: 1,
       name: "Kanto Pokedex (JQuery)",
       link: "https://github.com/MattGaughan2022/pokedex",
-      img: "./assets/pokedex/home.png",
+      img: pokedexHome,
     },
     {
       id: 2,
       name: "Kanto Pokedex (JQuery)",
       link: "https://github.com/MattGaughan2022/pokedex",
-      img: "./assets/pokedex/mankey.TheMonkeyPokemon.png",
+      img: pokedexMankey,
     },
   ],
   // [
