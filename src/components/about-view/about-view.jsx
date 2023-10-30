@@ -6,7 +6,11 @@ export const AboutView = () => {
   return (
     <Row className="mx-auto justify-content-md-center">
       <h1>About Me</h1>
-      <img src={mejpg} alt="me dot jpeg"></img>
+      <img
+        src={mejpg}
+        alt="me dot jpeg"
+        style={{ aspectRatio: "auto", height: "400px" }}
+      ></img>
 
       <a href="mailto:mattgaugs@gmail.com">mattgaugs@gmail.com</a>
       <br />
