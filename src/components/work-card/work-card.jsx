@@ -20,7 +20,16 @@ const WorkCard = ({ id, img, name, link, cardStyle, picRatio, info }) => {
         }}
       />
       <h2 style={{ height: "8%" }}>{name}</h2>
-      <p style={{ height: "8%" }}>{info}</p>
+      <p
+        style={{
+          height: "8%",
+          maxWidth: "85%",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      >
+        {info}
+      </p>
     </div>
   );
 };

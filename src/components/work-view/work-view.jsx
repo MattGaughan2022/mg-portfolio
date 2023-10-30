@@ -55,7 +55,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
-                info={projInfo[0]}
+                info={projInfo[0].info}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -97,7 +97,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
-                info={projInfo[1]}
+                info={projInfo[1].info}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -139,7 +139,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
-                info={projInfo[2]}
+                info={projInfo[2].info}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -181,7 +181,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
-                info={projInfo[3]}
+                info={projInfo[3].info}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -223,7 +223,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
-                info={projInfo[4]}
+                info={projInfo[4].info}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -265,7 +265,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
-                info={projInfo[5]}
+                info={projInfo[5].info}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
