@@ -206,3 +206,41 @@ export const data = [
   //   },
   // ],
 ];
+
+export const projInfo = [
+  //angular
+  {
+    id: 0,
+    tech: "",
+    info: "Previously designed using React, this app was made to test the use of Angular with the AtlasDB cloud service and API endpoints hosted on Heroku.",
+  },
+  //react
+  {
+    id: 1,
+    tech: "",
+    info: "Accessing a MERN-stack based API, this movie app is to demonstrate the use of API communication via React components and various React tools.",
+  },
+  {
+    id: 2,
+    tech: "",
+    info: "Using javascript packages like mongoose, JWT passport/auth, express, and other tech- a MongoDB movie/user database is connected to endpoints that are hosted by Heroku services.",
+  },
+  //meet app
+  {
+    id: 3,
+    tech: "",
+    info: "The Event App will store a (Google Calendar API) list of activities in various cities to allow the user to make a psuedo to-do list for when they are visiting on specific dates.",
+  },
+  //phone chat app
+  {
+    id: 4,
+    tech: "",
+    info: "Group Chat app built with React Native and Firestore database cloud storage.",
+  },
+  //pokedex
+  {
+    id: 5,
+    tech: "",
+    info: "This project leverages Ajax to access https://pokedex.org/ and their educational API webhooks. Polyfills are also used to help handle this connection and promise(s).",
+  },
+];

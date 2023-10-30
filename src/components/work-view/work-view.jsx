@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import WorkCard from "../work-card/work-card.jsx";
-import { data } from "../../workImgData";
+import { data, projInfo } from "../../workImgData";
 
 import { useState } from "react";
 
@@ -55,6 +55,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
+                info={projInfo[0]}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -96,6 +97,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
+                info={projInfo[1]}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -137,6 +139,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
+                info={projInfo[2]}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -178,6 +181,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
+                info={projInfo[3]}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -219,6 +223,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
+                info={projInfo[4]}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}
@@ -260,6 +265,7 @@ export const WorkView = () => {
                 : "prevCard";
             return (
               <WorkCard
+                info={projInfo[5]}
                 picRatio={ratio}
                 key={pic.id}
                 {...pic}

@@ -1,6 +1,6 @@
 import "./work-card.scss";
 
-const WorkCard = ({ id, img, name, link, cardStyle, picRatio }) => {
+const WorkCard = ({ id, img, name, link, cardStyle, picRatio, info }) => {
   return (
     <div
       className={`card ${cardStyle} mx-auto`}
@@ -20,7 +20,7 @@ const WorkCard = ({ id, img, name, link, cardStyle, picRatio }) => {
         }}
       />
       <h2 style={{ height: "8%" }}>{name}</h2>
-      <p style={{ height: "8%" }}>Hello</p>
+      <p style={{ height: "8%" }}>{info}</p>
     </div>
   );
 };
