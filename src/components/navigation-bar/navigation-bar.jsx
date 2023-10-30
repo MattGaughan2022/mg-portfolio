@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const NavigationBar = () => {
   const [isActive, setIsActive] = useState(false);
 
-  // let location = useLocation();
+  let location = useLocation();
 
   const toggleActiveClass = () => {
     setIsActive(!isActive);
@@ -32,26 +32,34 @@ export const NavigationBar = () => {
             </Nav.Link>
           </h1>
         </div>
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto navbar">
-            {location.pathname !== "/mg-portfolio/home" ? (
+            {location.pathname !== "/home" ? (
               <>
                 <Nav.Link as={Link} to="/home">
-                  <button className="navButton">Home</button>
+                  <img
+                    src=".recoHome.png"
+                    className="imgBtn"
+                    alt="button to home page"
+                  />
                 </Nav.Link>
-                <Nav.Link as={Link} to="/contact">
-                  <button className="navButton">Contact Me</button>
+                <Nav.Link as={Link} to="/about">
+                  <img
+                    src="./recoContact.png"
+                    className="imgBtn"
+                    alt="button to about page"
+                  />
                 </Nav.Link>
-                <Nav.Link as={Link} to="/projects">
+                {/* <Nav.Link as={Link} to="/projects">
                   <button className="navButton">My Work</button>
-                </Nav.Link>
+                </Nav.Link> */}
               </>
             ) : (
               <></>
             )}
           </Nav>
-        </Navbar.Collapse> */}
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

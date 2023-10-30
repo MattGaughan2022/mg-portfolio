@@ -4,6 +4,7 @@ import { HomeView } from "../home-view/home-view";
 import { ContactView } from "../contact-view/contact-view";
 import { WorkView } from "../work-view/work-view";
 import { NavigationBar } from "../navigation-bar/navigation-bar";
+import { AboutView } from "../about-me/about-me";
 import "./main-view.scss";
 
 //img imports
@@ -39,6 +40,16 @@ export const MainView = () => {
 
           <Route
             path="/projects"
+            element={
+              <>
+                <div className="compDiv">
+                  <WorkView />
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="/about"
             element={
               <>
                 <div className="compDiv">
