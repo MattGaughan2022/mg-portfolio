@@ -5,12 +5,15 @@ import "react-awesome-button/dist/styles.css";
 import "./home-view.scss";
 import { Link } from "react-router-dom";
 
+//img import
+import meJPG from ".../public/img/me.jpg";
+
 export const HomeView = () => {
   return (
     <Row className="mx-auto justify-content-md-center">
       <div className="profile">
         <img
-          src="img/me.jpg"
+          src={{ meJPG }}
           className="img__me"
           alt="Actually me.jpg"
           width="130"

@@ -6,6 +6,10 @@ import { WorkView } from "../work-view/work-view";
 import { NavigationBar } from "../navigation-bar/navigation-bar";
 import "./main-view.scss";
 
+//img imports
+import linkedinIco from ".../public/img/iconLinkedIn.png";
+import gitIco from ".../public/img/iconGithub.png";
+
 export const MainView = () => {
   return (
     <BrowserRouter>
@@ -59,14 +63,14 @@ export const MainView = () => {
           <p>Find me on</p>
           <a href="https://www.linkedin.com/in/matt-gaughan-70243b214/">
             <img
-              src="img/iconLinkedIn.png"
+              src={{ linkedinIco }}
               alt="LinkedIn"
               style={{ backgroundColor: "#64ffda" }}
             />
           </a>
           <a href="https://github.com/MattGaughan2022">
             <img
-              src="img/iconGithub.png"
+              src={{ gitIco }}
               alt="GitHub"
               style={{ backgroundColor: "#64ffda" }}
             />
