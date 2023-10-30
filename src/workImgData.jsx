@@ -114,19 +114,19 @@ export const data = [
     {
       //api
       id: 1,
-      name: "MovieDB (Node API)",
+      name: "MovieDB Node API",
       link: "https://github.com/MattGaughan2022/nodeMovieAPI",
       img: apiHeroku,
     },
     {
       id: 2,
-      name: "MovieDB (Node API)",
+      name: "MovieDB Node API",
       link: "https://github.com/MattGaughan2022/nodeMovieAPI",
       img: apiMongo,
     },
     {
       id: 3,
-      name: "MovieDB (Node API)",
+      name: "MovieDB Node API",
       link: "https://github.com/MattGaughan2022/nodeMovieAPI",
       img: apiPostman,
     },
@@ -135,19 +135,19 @@ export const data = [
     {
       //meet app
       id: 1,
-      name: "Meet App (Google API)",
+      name: "Meet App",
       link: "https://github.com/MattGaughan2022/meetApp",
       img: meetHome,
     },
     {
       id: 2,
-      name: "Meet App (Google API)",
+      name: "Meet App",
       link: "https://github.com/MattGaughan2022/meetApp",
       img: meetChart,
     },
     {
       id: 3,
-      name: "Meet App (Google API)",
+      name: "Meet App",
       link: "https://github.com/MattGaughan2022/meetApp",
       img: meetGraph,
     },
@@ -156,13 +156,13 @@ export const data = [
     {
       //phone app
       id: 1,
-      name: "Chat App (React Native)",
+      name: "Chat App",
       link: "https://github.com/MattGaughan2022/chat-demo",
       img: chatStart,
     },
     {
       id: 2,
-      name: "Chat App (React Native)",
+      name: "Chat App",
       link: "https://github.com/MattGaughan2022/chat-demo",
       img: chatChat,
     },
@@ -171,13 +171,13 @@ export const data = [
     {
       //simple pokedex
       id: 1,
-      name: "Kanto Pokedex (JQuery)",
+      name: "Kanto Pokedex",
       link: "https://github.com/MattGaughan2022/pokedex",
       img: pokedexHome,
     },
     {
       id: 2,
-      name: "Kanto Pokedex (JQuery)",
+      name: "Kanto Pokedex",
       link: "https://github.com/MattGaughan2022/pokedex",
       img: pokedexMankey,
     },

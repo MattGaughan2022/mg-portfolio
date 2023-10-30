@@ -23,7 +23,7 @@ const WorkCard = ({ id, img, name, link, cardStyle, picRatio, info }) => {
       <p
         style={{
           height: "8%",
-          maxWidth: "85%",
+          maxWidth: "82%",
           marginLeft: "auto",
           marginRight: "auto",
         }}
