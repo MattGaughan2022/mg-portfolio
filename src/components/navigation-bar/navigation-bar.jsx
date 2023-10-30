@@ -5,6 +5,10 @@ import { Link, useLocation } from "react-router-dom";
 import "./navigation-bar.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+//img import
+import home from "./recoHome.png";
+import about from "./recoContact.png";
+
 export const NavigationBar = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -39,14 +43,14 @@ export const NavigationBar = () => {
               <>
                 <Nav.Link as={Link} to="/home">
                   <img
-                    src=".recoHome.png"
+                    src={home}
                     className="imgBtn"
                     alt="button to home page"
                   />
                 </Nav.Link>
                 <Nav.Link as={Link} to="/about">
                   <img
-                    src="./recoContact.png"
+                    src={about}
                     className="imgBtn"
                     alt="button to about page"
                   />
