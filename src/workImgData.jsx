@@ -5,11 +5,11 @@
 
 // ===================IMPORTS===================
 
-import angHome from "public/assets/angularFlix/homePage.png";
-import angDetails from "public/assets/angularFlix/details.png";
-import angLogin from "public/assets/angularFlix/login.png";
-import angProf from "public/assets/angularFlix/profile.png";
-import angUpdate from "public/assets/angularFlix/updateProf.png";
+import angHome from "../public/assets/angularFlix/homePage.png";
+import angDetails from "../public/assets/angularFlix/details.png";
+import angLogin from "../public/assets/angularFlix/login.png";
+import angProf from "../public/assets/angularFlix/profile.png";
+import angUpdate from "../public/assets/angularFlix/updateProf.png";
 
 export const data = [
   [
