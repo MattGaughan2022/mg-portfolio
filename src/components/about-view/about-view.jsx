@@ -6,12 +6,12 @@ export const AboutView = () => {
   return (
     <Row className="mx-auto justify-content-md-center">
       <Col>
-        <div style={{ maxWidth: "60%" }}>
+        <div style={{ maxWidth: "60%", maxHeight: "880px", margin: "auto" }}>
           <h1>About Me</h1>
           <img
             src={mejpg}
             alt="me dot jpeg"
-            style={{ aspectRatio: 2 / 1, height: "400px", width: "220px" }}
+            style={{ aspectRatio: 2 / 1, height: "40%" }}
           ></img>
           <p>
             I am a computer engineer from Canton MA that has been learning
