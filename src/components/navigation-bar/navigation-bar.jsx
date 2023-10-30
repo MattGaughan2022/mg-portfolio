@@ -39,35 +39,35 @@ export const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto navbar">
-            {location.pathname !== "/" ? (
-              <>
-                <Nav.Link as={Link} to="/">
-                  <button style={{ backgroundColor: "clear" }}>
-                    <img
-                      src={home}
-                      className="imgBtn"
-                      alt="button to home page"
-                      style={{ height: "50px", width: "50px" }}
-                    />
-                  </button>
-                </Nav.Link>
-                <Nav.Link as={Link} to="/about">
-                  <button style={{ backgroundColor: "clear" }}>
-                    <img
-                      src={about}
-                      className="imgBtn"
-                      alt="button to about page"
-                      style={{ height: "50px", width: "50px" }}
-                    />
-                  </button>
-                </Nav.Link>
-                {/* <Nav.Link as={Link} to="/projects">
+            {/* {location.pathname !== "/" ? ( */}
+            <>
+              <Nav.Link as={Link} to="/">
+                <button style={{ backgroundColor: "transparent" }}>
+                  <img
+                    src={home}
+                    className="imgBtn"
+                    alt="button to home page"
+                    style={{ height: "50px", width: "50px" }}
+                  />
+                </button>
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about">
+                <button style={{ backgroundColor: "transparent" }}>
+                  <img
+                    src={about}
+                    className="imgBtn"
+                    alt="button to about page"
+                    style={{ height: "50px", width: "50px" }}
+                  />
+                </button>
+              </Nav.Link>
+              {/* <Nav.Link as={Link} to="/projects">
                   <button className="navButton">My Work</button>
                 </Nav.Link> */}
-              </>
-            ) : (
+            </>
+            {/* ) : (
               <></>
-            )}
+            )} */}
           </Nav>
         </Navbar.Collapse>
       </Container>
