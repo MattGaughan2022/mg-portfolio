@@ -63,14 +63,14 @@ export const MainView = () => {
           <p>Find me on</p>
           <a href="https://www.linkedin.com/in/matt-gaughan-70243b214/">
             <img
-              src={{ linkedinIco }}
+              src="./iconLinkedIn.png"
               alt="LinkedIn"
               style={{ backgroundColor: "#64ffda" }}
             />
           </a>
           <a href="https://github.com/MattGaughan2022">
             <img
-              src={{ gitIco }}
+              src="./iconGithub.png"
               alt="GitHub"
               style={{ backgroundColor: "#64ffda" }}
             />
