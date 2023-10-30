@@ -53,7 +53,7 @@ export const MainView = () => {
             element={
               <>
                 <div className="compDiv">
-                  <WorkView />
+                  <AboutView />
                 </div>
               </>
             }

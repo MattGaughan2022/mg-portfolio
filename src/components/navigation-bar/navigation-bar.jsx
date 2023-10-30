@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //img import
 import home from "./recoHome.png";
 import about from "./recoContact.png";
+import work from "./work.png";
 
 export const NavigationBar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -42,38 +43,32 @@ export const NavigationBar = () => {
             {/* {location.pathname !== "/" ? ( */}
             <>
               <Nav.Link as={Link} to="/">
-                <button
-                  style={{
-                    backgroundColor: "transparent",
-                    border: "0px solid #00AA66",
-                  }}
-                >
+                <button className="iconButton">
                   <img
                     src={home}
                     className="imgBtn"
                     alt="button to home page"
-                    style={{ height: "50px", width: "50px" }}
                   />
                 </button>
               </Nav.Link>
               <Nav.Link as={Link} to="/about">
-                <button
-                  style={{
-                    backgroundColor: "transparent",
-                    border: "0px solid #00AA66",
-                  }}
-                >
+                <button className="iconButton">
                   <img
                     src={about}
                     className="imgBtn"
                     alt="button to about page"
-                    style={{ height: "50px", width: "50px" }}
                   />
                 </button>
               </Nav.Link>
-              {/* <Nav.Link as={Link} to="/projects">
-                  <button className="navButton">My Work</button>
-                </Nav.Link> */}
+              <Nav.Link as={Link} to="/projects">
+                <button className="iconButton">
+                  <img
+                    src={work}
+                    className="imgBtn"
+                    alt="button to projects page"
+                  />
+                </button>
+              </Nav.Link>
             </>
             {/* ) : (
               <></>
