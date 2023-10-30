@@ -42,7 +42,12 @@ export const NavigationBar = () => {
             {/* {location.pathname !== "/" ? ( */}
             <>
               <Nav.Link as={Link} to="/">
-                <button style={{ backgroundColor: "transparent" }}>
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "0px solid #00AA66",
+                  }}
+                >
                   <img
                     src={home}
                     className="imgBtn"
@@ -52,7 +57,12 @@ export const NavigationBar = () => {
                 </button>
               </Nav.Link>
               <Nav.Link as={Link} to="/about">
-                <button style={{ backgroundColor: "transparent" }}>
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "0px solid #00AA66",
+                  }}
+                >
                   <img
                     src={about}
                     className="imgBtn"
