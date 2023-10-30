@@ -5,37 +5,37 @@
 
 // ===================IMPORTS===================
 //angular
-import angHome from "../public/assets/angularFlix/homePage.png";
-import angDetails from "../public/assets/angularFlix/details.png";
-import angLogin from "../public/assets/angularFlix/login.png";
-import angProf from "../public/assets/angularFlix/profile.png";
-import angUpdate from "../public/assets/angularFlix/updateProf.png";
+import angHome from "./assets/angularFlix/homePage.png";
+import angDetails from "./assets/angularFlix/details.png";
+import angLogin from "./assets/angularFlix/login.png";
+import angProf from "./assets/angularFlix/profile.png";
+import angUpdate from "./assets/angularFlix/updateProf.png";
 
 //react
-import reactDetails from "../public/assets/reactFlix/details.png";
-import reactHome from "../public/assets/reactFlix/home.png";
-import reactFiltered from "../public/assets/reactFlix/filtered.png";
-import reactSignup from "../public/assets/reactFlix/signUp.png";
-import reactProf from "../public/assets/reactFlix/profile.png";
-import reactUpdate from "../public/assets/reactFlix/updateProf.png";
+import reactDetails from "./assets/reactFlix/details.png";
+import reactHome from "./assets/reactFlix/home.png";
+import reactFiltered from "./assets/reactFlix/filtered.png";
+import reactSignup from "./assets/reactFlix/signUp.png";
+import reactProf from "./assets/reactFlix/profile.png";
+import reactUpdate from "./assets/reactFlix/updateProf.png";
 
 //api
-import apiHeroku from "../public/assets/movieAPI/herokuHost.png";
-import apiMongo from "../public/assets/movieAPI/mongoDB.png";
-import apiPostman from "../public/assets/movieAPI/postman2.png";
+import apiHeroku from "./assets/movieAPI/herokuHost.png";
+import apiMongo from "./assets/movieAPI/mongoDB.png";
+import apiPostman from "./assets/movieAPI/postman2.png";
 
 //meet app
-import meetHome from "../public/assets/meetApp/home.png";
-import meetGraph from "../public/assets/meetApp/graph.png";
-import meetChart from "../public/assets/meetApp/chart.png";
+import meetHome from "./assets/meetApp/home.png";
+import meetGraph from "./assets/meetApp/graph.png";
+import meetChart from "./assets/meetApp/chart.png";
 
 //phone chat app
-import chatChat from "../public/assets/chatApp/chat.png";
-import chatStart from "../public/assets/chatApp/start.png";
+import chatChat from "./assets/chatApp/chat.png";
+import chatStart from "./assets/chatApp/start.png";
 
 //pokedex
-import pokedexHome from "../public/assets/pokedex/home.png";
-import pokedexMankey from "../public/assets/pokedex/mankey.TheMonkeyPokemon.png";
+import pokedexHome from "./assets/pokedex/home.png";
+import pokedexMankey from "./assets/pokedex/mankey.TheMonkeyPokemon.png";
 
 export const data = [
   [
