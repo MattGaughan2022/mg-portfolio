@@ -6,7 +6,7 @@ import "./home-view.scss";
 import { Link } from "react-router-dom";
 
 //img import
-import meJPG from ".../img/me.jpg";
+import meJPG from "../../img/me.jpg";
 
 export const HomeView = () => {
   return (
