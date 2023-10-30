@@ -7,8 +7,8 @@ import { NavigationBar } from "../navigation-bar/navigation-bar";
 import "./main-view.scss";
 
 //img imports
-import linkedinIco from ".../public/img/iconLinkedIn.png";
-import gitIco from ".../public/img/iconGithub.png";
+import linkedinIco from "../../../public/img/iconLinkedIn.png";
+import gitIco from "../../../public/img/iconGithub.png";
 
 export const MainView = () => {
   return (
