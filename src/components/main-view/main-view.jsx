@@ -7,8 +7,8 @@ import { NavigationBar } from "../navigation-bar/navigation-bar";
 import "./main-view.scss";
 
 //img imports
-import linkedinIco from "./main-view/iconLinkedIn.png";
-import gitIco from "./main-view/iconGithub.png";
+import linkedinIco from "./iconLinkedIn.png";
+import gitIco from "./iconGithub.png";
 
 export const MainView = () => {
   return (
@@ -63,14 +63,14 @@ export const MainView = () => {
           <p>Find me on</p>
           <a href="https://www.linkedin.com/in/matt-gaughan-70243b214/">
             <img
-              src={{ linkedinIco }}
+              src={linkedinIco}
               alt="LinkedIn"
               style={{ backgroundColor: "#64ffda" }}
             />
           </a>
           <a href="https://github.com/MattGaughan2022">
             <img
-              src={{ gitIco }}
+              src={gitIco}
               alt="GitHub"
               style={{ backgroundColor: "#64ffda" }}
             />

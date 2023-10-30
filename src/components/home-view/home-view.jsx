@@ -13,7 +13,7 @@ export const HomeView = () => {
     <Row className="mx-auto justify-content-md-center">
       <div className="profile">
         <img
-          src={{ meJPG }}
+          src={meJPG}
           className="img__me"
           alt="Actually me.jpg"
           width="130"
