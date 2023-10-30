@@ -3,6 +3,14 @@
 //"homepage": "https://mattgaughan2022.github.io/mg-portfolio/", for ghpages
 //used parcel plugin to import all photos, but instead scrapped to just moving files out of '/public'
 
+// ===================IMPORTS===================
+
+import angHome from "public/assets/angularFlix/homePage.png";
+import angDetails from "public/assets/angularFlix/details.png";
+import angLogin from "public/assets/angularFlix/login.png";
+import angProf from "public/assets/angularFlix/profile.png";
+import angUpdate from "public/assets/angularFlix/updateProf.png";
+
 export const data = [
   [
     {
@@ -10,31 +18,31 @@ export const data = [
       id: 1,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "../assets/angularFlix/homePage.png",
+      img: angHome,
     },
     {
       id: 2,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "./assets/angularFlix/details.png",
+      img: angDetails,
     },
     {
       id: 3,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "src/assets/angularFlix/login.png",
+      img: angLogin,
     },
     {
       id: 4,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "assets/angularFlix/profile.png",
+      img: angProf,
     },
     {
       id: 5,
       name: "MovieDB (Angular)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: "angularFlix/updateProf.png",
+      img: angUpdate,
     },
   ],
   [
