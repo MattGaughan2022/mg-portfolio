@@ -12,15 +12,15 @@ export const HomeView = () => {
   return (
     <Row className="mx-auto justify-content-md-center">
       <div className="profile">
-        <div style={{ height: "200px" }}></div>
-        {/* <img
+        {/* <div style={{ height: "200px" }}></div> */}
+        <img
           src={meJPG}
           className="img__me"
           alt="Actually me.jpg"
           width="130"
           height="200"
           style={{ borderRadius: "10%" }}
-        /> */}
+        />
         <h1>Hello, World!</h1>
         <br />
         <Nav.Link as={Link} to="/projects">

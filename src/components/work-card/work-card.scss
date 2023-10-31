@@ -1,6 +1,8 @@
 .prevCard {
   left: calc(0% + 2rem);
   opacity: 0;
+  pointer-events: none;
+  cursor: default;
 }
 
 .activeCard {
@@ -12,6 +14,8 @@
   left: 100%;
   transform: translateX(calc(-100% - 2rem));
   opacity: 0;
+  pointer-events: none;
+  cursor: default;
 }
 .card {
   position: absolute !important;
