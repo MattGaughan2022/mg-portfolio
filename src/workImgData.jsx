@@ -229,7 +229,7 @@ export const projInfo = [
   {
     id: 3,
     tech: "",
-    info: "The Event App will store a (Google Calendar API) list of activities in various cities to allow the user to make a psuedo to-do list for when they are visiting on specific dates.",
+    info: "After user OAuth2 sign-in, the Meet App will store a (Google Calendar API) list of activities in various cities to allow the user to make a psuedo to-do list for when they are visiting on specific dates.",
   },
   //phone chat app
   {
