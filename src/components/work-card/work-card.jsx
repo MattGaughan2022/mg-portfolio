@@ -1,6 +1,9 @@
 import "./work-card.scss";
 
 const WorkCard = ({ id, img, name, link, cardStyle, picRatio, info }) => {
+  function openLinkInNewTab(url) {
+    window.open(link, "_blank");
+  }
   return (
     <div
       className={`card ${cardStyle} mx-auto`}
@@ -16,7 +19,7 @@ const WorkCard = ({ id, img, name, link, cardStyle, picRatio, info }) => {
         alt={id}
         className={`${picRatio}`}
         onClick={() => {
-          window.location.href = `${link}`;
+          openLinkInNewTab(link);
         }}
       />
       <h2 style={{ height: "8%" }}>{name}</h2>
