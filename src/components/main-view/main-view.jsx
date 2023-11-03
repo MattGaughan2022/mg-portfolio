@@ -10,8 +10,6 @@ import "./main-view.scss";
 //img imports
 import linkedinIco from "./iconLinkedIn.png";
 import gitIco from "./iconGithub.png";
-import twitter from "./xtwitter.png";
-import medium from "./mediumSite.png";
 
 export const MainView = () => {
   return (
