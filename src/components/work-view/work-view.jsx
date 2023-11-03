@@ -33,7 +33,7 @@ export const WorkView = () => {
   return (
     <Container className="pageContainer">
       <h1 className="header1" style={{ fontSize: "180px", textAlign: "left" }}>
-        Porfolio
+        Portfolio
       </h1>
       <h2 className="header2">Portfolio</h2>
       <Row className="text-center">

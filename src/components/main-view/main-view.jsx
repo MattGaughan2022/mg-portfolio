@@ -88,30 +88,6 @@ export const MainView = () => {
               style={{ backgroundColor: "#64ffda" }}
             />
           </a>
-          <a href="https://twitter.com/gaugsmatt">
-            <img
-              src={twitter}
-              alt="twitter / x"
-              style={{
-                backgroundColor: "#64ffda",
-                height: "32px",
-                width: "32px",
-                padding: "2px",
-              }}
-            />
-          </a>
-          <a href="https://medium.com/@mattgaugs">
-            <img
-              src={medium}
-              alt="medium social media site"
-              style={{
-                backgroundColor: "#64ffda",
-                height: "32px",
-                width: "32px",
-                padding: "1px",
-              }}
-            />
-          </a>
         </footer>
       </Row>
     </BrowserRouter>
