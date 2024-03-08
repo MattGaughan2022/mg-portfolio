@@ -3,6 +3,7 @@
 //"homepage": "https://mattgaughan2022.github.io/mg-portfolio/", for ghpages
 //used parcel plugin to import all photos, but instead scrapped to just moving files out of '/public'
 
+
 // ===================IMPORTS===================
 //angular
 import angHome from "./assets/angularFlix/homePage.png";
@@ -37,210 +38,233 @@ import chatStart from "./assets/chatApp/start.png";
 import pokedexHome from "./assets/pokedex/home.png";
 import pokedexMankey from "./assets/pokedex/mankey.TheMonkeyPokemon.png";
 
+const t=[
+      {
+      key: "Angular",
+      img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png"
+    },
+    {
+      key: "React",
+      img: "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png"
+    },
+    {
+      key: "Express.js",
+      img: "https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-512.png"
+    },
+    {
+      key: "Node.js",
+      img: "https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
+    },
+    {
+      key: "MongoDB",
+      img: "https://cdn4.iconfinder.com/data/icons/logos-3/512/mongodb-2-512.png"
+    },
+    {
+      key: "MySQL",
+      img: "0"
+    },
+    {
+      key: "Python",
+      img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png"
+    },
+  ]
+
 export const data = [
-  [
+  
     {
-      //angular
-      id: 1,
-      name: "MovieDB (Angular)",
+    projid: 1,
+    name: "MovieDB (Angular)",
+    link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
+    tech: [t[0],t[2],t[3],t[4]],
+    content: [
+      {
+        //angular
+        id: 1,
+        img: angHome,
+      },
+      {
+        id: 2,
+        img: angDetails,
+      },
+      {
+        id: 3,
+        img: angLogin,
+      },
+      {
+        id: 4,
+        img: angProf,
+      },
+      {
+        id: 5,
+        img: angUpdate,
+      },
+    ]}
+  ,
+  
+    {
+      projid: 2,
+      name: "MovieDB (React)",
       link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: angHome,
-    },
-    {
-      id: 2,
-      name: "MovieDB (Angular)",
-      link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: angDetails,
-    },
-    {
-      id: 3,
-      name: "MovieDB (Angular)",
-      link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: angLogin,
-    },
-    {
-      id: 4,
-      name: "MovieDB (Angular)",
-      link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: angProf,
-    },
-    {
-      id: 5,
-      name: "MovieDB (Angular)",
-      link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      img: angUpdate,
-    },
-  ],
-  [
-    {
-      //react
-      id: 1,
-      name: "MovieDB (React)",
-      link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: reactHome,
-    },
-    {
-      id: 2,
-      name: "MovieDB (React)",
-      link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: reactFiltered,
-    },
-    {
-      id: 3,
-      name: "MovieDB (React)",
-      link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: reactDetails,
-    },
-    {
-      id: 4,
-      name: "MovieDB (React)",
-      link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: reactSignup,
-    },
-    {
-      id: 5,
-      name: "MovieDB (React)",
-      link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: reactProf,
-    },
-    {
-      id: 6,
-      name: "MovieDB (React)",
-      link: "https://github.com/MattGaughan2022/client-movieApp",
-      img: reactUpdate,
-    },
-  ],
-  [
-    {
-      //api
-      id: 1,
-      name: "MovieDB Node API",
-      link: "https://github.com/MattGaughan2022/nodeMovieAPI",
-      img: apiHeroku,
-    },
-    {
-      id: 2,
-      name: "MovieDB Node API",
-      link: "https://github.com/MattGaughan2022/nodeMovieAPI",
-      img: apiMongo,
-    },
-    {
-      id: 3,
-      name: "MovieDB Node API",
-      link: "https://github.com/MattGaughan2022/nodeMovieAPI",
-      img: apiPostman,
-    },
-  ],
-  [
-    {
-      //meet app
-      id: 1,
-      name: "Meet App",
-      link: "https://github.com/MattGaughan2022/meetApp",
-      img: meetHome,
-    },
-    {
-      id: 2,
-      name: "Meet App",
-      link: "https://github.com/MattGaughan2022/meetApp",
-      img: meetChart,
-    },
-    {
-      id: 3,
-      name: "Meet App",
-      link: "https://github.com/MattGaughan2022/meetApp",
-      img: meetGraph,
-    },
-  ],
-  [
-    {
-      //phone app
-      id: 1,
-      name: "Chat App",
-      link: "https://github.com/MattGaughan2022/chat-demo",
-      img: chatStart,
-    },
-    {
-      id: 2,
-      name: "Chat App",
-      link: "https://github.com/MattGaughan2022/chat-demo",
-      img: chatChat,
-    },
-  ],
-  [
-    {
-      //simple pokedex
-      id: 1,
-      name: "Kanto Pokedex",
-      link: "https://github.com/MattGaughan2022/pokedex",
-      img: pokedexHome,
-    },
-    {
-      id: 2,
-      name: "Kanto Pokedex",
-      link: "https://github.com/MattGaughan2022/pokedex",
-      img: pokedexMankey,
-    },
-  ],
+      tech: [t[1],t[2],t[3],t[4]],
+      content: [
+      {
+        //react
+        id: 1,
+        img: reactHome,
+      },
+      {
+        id: 2,
+        img: reactFiltered,
+      },
+      {
+        id: 3,
+        img: reactDetails,
+      },
+      {
+        id: 4,
+        img: reactSignup,
+      },
+      {
+        id: 5,
+        img: reactProf,
+      },
+      {
+        id: 6,
+        img: reactUpdate,
+      },
+    ]}
+  ,
   // [
   //   {
-  //     //query todo list
+  //     //api
   //     id: 1,
-  //     img: "blank",
+  //     name: "MovieDB Node API",
+  //     link: "https://github.com/MattGaughan2022/nodeMovieAPI",
+  //     img: apiHeroku,
   //   },
   //   {
   //     id: 2,
-  //     img: "blank",
+  //     name: "MovieDB Node API",
+  //     link: "https://github.com/MattGaughan2022/nodeMovieAPI",
+  //     img: apiMongo,
   //   },
   //   {
   //     id: 3,
-  //     img: "blank",
-  //   },
-  //   {
-  //     id: 4,
-  //     img: "blank",
-  //   },
-  //   {
-  //     id: 5,
-  //     img: "blank",
+  //     name: "MovieDB Node API",
+  //     link: "https://github.com/MattGaughan2022/nodeMovieAPI",
+  //     img: apiPostman,
   //   },
   // ],
+  // [
+  //   {
+  //     //meet app
+  //     id: 1,
+  //     name: "Meet App",
+  //     link: "https://github.com/MattGaughan2022/meetApp",
+  //     img: meetHome,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Meet App",
+  //     link: "https://github.com/MattGaughan2022/meetApp",
+  //     img: meetChart,
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Meet App",
+  //     link: "https://github.com/MattGaughan2022/meetApp",
+  //     img: meetGraph,
+  //   },
+  // ],
+  // [
+  //   {
+  //     //phone app
+  //     id: 1,
+  //     name: "Chat App",
+  //     link: "https://github.com/MattGaughan2022/chat-demo",
+  //     img: chatStart,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Chat App",
+  //     link: "https://github.com/MattGaughan2022/chat-demo",
+  //     img: chatChat,
+  //   },
+  // ],
+  // [
+  //   {
+  //     //simple pokedex
+  //     id: 1,
+  //     name: "Kanto Pokedex",
+  //     link: "https://github.com/MattGaughan2022/pokedex",
+  //     img: pokedexHome,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Kanto Pokedex",
+  //     link: "https://github.com/MattGaughan2022/pokedex",
+  //     img: pokedexMankey,
+  //   },
+  // ],
+  // // [
+  // //   {
+  // //     //query todo list
+  // //     id: 1,
+  // //     img: "blank",
+  // //   },
+  // //   {
+  // //     id: 2,
+  // //     img: "blank",
+  // //   },
+  // //   {
+  // //     id: 3,
+  // //     img: "blank",
+  // //   },
+  // //   {
+  // //     id: 4,
+  // //     img: "blank",
+  // //   },
+  // //   {
+  // //     id: 5,
+  // //     img: "blank",
+  // //   },
+  // // ],
 ];
 
-export const projInfo = [
-  //angular
-  {
-    id: 0,
-    tech: "",
-    info: "Previously designed using React, this app was made to test the use of Angular with the AtlasDB cloud service and API endpoints hosted on Heroku.",
-  },
-  //react
-  {
-    id: 1,
-    tech: "",
-    info: "Accessing a MERN-stack based API, this movie app is to demonstrate the use of API communication via React components and various React tools.",
-  },
-  {
-    id: 2,
-    tech: "",
-    info: "Using javascript packages like mongoose, JWT passport/auth, express, and other tech- a MongoDB movie/user database is connected to endpoints that are hosted by Heroku services.",
-  },
-  //meet app
-  {
-    id: 3,
-    tech: "",
-    info: "After user OAuth2 sign-in, the Meet App will store a (Google Calendar API) list of activities in various cities to allow the user to make a psuedo to-do list for when they are visiting on specific dates.",
-  },
-  //phone chat app
-  {
-    id: 4,
-    tech: "",
-    info: "Group Chat app built with React Native and Firestore database cloud storage.",
-  },
-  //pokedex
-  {
-    id: 5,
-    tech: "",
-    info: "This project leverages Ajax to access https://pokedex.org/ and their educational API webhooks. Polyfills are also used to help handle this connection and promise(s).",
-  },
-];
+// export const projInfo = [
+//   //angular
+//   {
+//     id: 0,
+//     tech: "",
+//     info: "Previously designed using React, this app was made to test the use of Angular with the AtlasDB cloud service and API endpoints hosted on Heroku.",
+//   },
+//   //react
+//   {
+//     id: 1,
+//     tech: "",
+//     info: "Accessing a MERN-stack based API, this movie app is to demonstrate the use of API communication via React components and various React tools.",
+//   },
+//   {
+//     id: 2,
+//     tech: "",
+//     info: "Using javascript packages like mongoose, JWT passport/auth, express, and other tech- a MongoDB movie/user database is connected to endpoints that are hosted by Heroku services.",
+//   },
+//   //meet app
+//   {
+//     id: 3,
+//     tech: "",
+//     info: "After user OAuth2 sign-in, the Meet App will store a (Google Calendar API) list of activities in various cities to allow the user to make a psuedo to-do list for when they are visiting on specific dates.",
+//   },
+//   //phone chat app
+//   {
+//     id: 4,
+//     tech: "",
+//     info: "Group Chat app built with React Native and Firestore database cloud storage.",
+//   },
+//   //pokedex
+//   {
+//     id: 5,
+//     tech: "",
+//     info: "This project leverages Ajax to access https://pokedex.org/ and their educational API webhooks. Polyfills are also used to help handle this connection and promise(s).",
+//   },
+// ];

@@ -1,0 +1,46 @@
+@media (width > 768px) {
+  .header1 {
+    color: #ccd6f6;
+  }
+  .header2 {
+    color: #ccd6f6;
+    display: none;
+  }
+  .item {
+    height: 20%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media (width <= 768px) { //fit on small screens
+  .header1 {
+    color: #ccd6f6;
+    display: none;
+  }
+  .header2 {
+    color: #ccd6f6;
+    font-size: 60px;
+  }
+  .item {
+    height: 20%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+// pageContainer{
+//   width: 95%
+// }
+
+.card{
+  align-items: center;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width:15%;
+}
+
+
+.photo-card{
+  max-width: 25%;
+  max-height: 100%;
+}
