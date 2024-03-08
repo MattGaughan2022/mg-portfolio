@@ -1,24 +1,25 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Row } from "react-bootstrap";
 import { HomeView } from "../home-view/home-view";
-import React,{ Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 import { FullView } from "../full-view/full-view";
 import { ContactView } from "../contact-view/contact-view";
 //import { WorkView } from "../work-view/work-view";
 import { NavigationBar } from "../navigation-bar/navigation-bar";
 import { AboutView } from "../about-view/about-view";
+import { ProjView } from "../proj-view/proj-view";
 import "./main-view.scss";
 
 //img imports
 import linkedinIco from "./iconLinkedIn.png";
 import gitIco from "./iconGithub.png";
 
-const CarouselView = React.lazy(()=> import("../carousel-view/carousel-view"));
+const CarouselView = React.lazy(() => import("../carousel-view/carousel-view"));
 
 export const MainView = () => {
   return (
     <BrowserRouter>
-      {/* <NavigationBar /> */}
+      <NavigationBar />
       <Row>
         <Routes>
           <Route
@@ -26,10 +27,8 @@ export const MainView = () => {
             element={
               <>
                 <div className="compDiv">
-                  {/* <FullView/> */}
                   <Suspense fallback={"loading..."}>
-                    <FullView/>
-                    {/* <CarouselView/> */}
+                    <HomeView />
                   </Suspense>
                 </div>
               </>
@@ -40,26 +39,19 @@ export const MainView = () => {
             element={
               <>
                 <div className="compDiv">
-                  {/* <FullView/> */}
                   <Suspense fallback={"loading..."}>
-                    <CarouselView/>
+                    <CarouselView />
                   </Suspense>
                 </div>
               </>
             }
           />
           <Route
-            path="/projects/:name"
+            path="/projects/:proj"
             element={
-              <>
-                <div className="compDiv">
-                  {/* <FullView/> */}
-                  <Suspense fallback={"loading..."}>
-                    <p>HI THIS IS NEW PROJECT NAME</p>
-                    <CarouselView/>
-                  </Suspense>
-                </div>
-              </>
+              <div className="compDiv">
+                <ProjView />
+              </div>
             }
           />
         </Routes>

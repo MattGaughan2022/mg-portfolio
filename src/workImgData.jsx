@@ -3,7 +3,6 @@
 //"homepage": "https://mattgaughan2022.github.io/mg-portfolio/", for ghpages
 //used parcel plugin to import all photos, but instead scrapped to just moving files out of '/public'
 
-
 // ===================IMPORTS===================
 //angular
 import angHome from "./assets/angularFlix/homePage.png";
@@ -38,44 +37,43 @@ import chatStart from "./assets/chatApp/start.png";
 import pokedexHome from "./assets/pokedex/home.png";
 import pokedexMankey from "./assets/pokedex/mankey.TheMonkeyPokemon.png";
 
-const t=[
-      {
-      key: "Angular",
-      img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png"
-    },
-    {
-      key: "React",
-      img: "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png"
-    },
-    {
-      key: "Express.js",
-      img: "https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-512.png"
-    },
-    {
-      key: "Node.js",
-      img: "https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
-    },
-    {
-      key: "MongoDB",
-      img: "https://cdn4.iconfinder.com/data/icons/logos-3/512/mongodb-2-512.png"
-    },
-    {
-      key: "MySQL",
-      img: "0"
-    },
-    {
-      key: "Python",
-      img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png"
-    },
-  ]
+const t = [
+  {
+    key: "Angular",
+    img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png",
+  },
+  {
+    key: "React",
+    img: "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png",
+  },
+  {
+    key: "Express.js",
+    img: "https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-512.png",
+  },
+  {
+    key: "Node.js",
+    img: "https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png",
+  },
+  {
+    key: "MongoDB",
+    img: "https://cdn4.iconfinder.com/data/icons/logos-3/512/mongodb-2-512.png",
+  },
+  {
+    key: "MySQL",
+    img: "0",
+  },
+  {
+    key: "Python",
+    img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png",
+  },
+];
 
 export const data = [
-  
-    {
+  {
     projid: 1,
     name: "MovieDB (Angular)",
     link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-    tech: [t[0],t[2],t[3],t[4]],
+    tech: [t[0], t[2], t[3], t[4]],
     content: [
       {
         //angular
@@ -98,15 +96,14 @@ export const data = [
         id: 5,
         img: angUpdate,
       },
-    ]}
-  ,
-  
-    {
-      projid: 2,
-      name: "MovieDB (React)",
-      link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
-      tech: [t[1],t[2],t[3],t[4]],
-      content: [
+    ],
+  },
+  {
+    projid: 2,
+    name: "MovieDB (React)",
+    link: "https://github.com/MattGaughan2022/myFlix-Angular-client",
+    tech: [t[1], t[2], t[3], t[4]],
+    content: [
       {
         //react
         id: 1,
@@ -132,8 +129,8 @@ export const data = [
         id: 6,
         img: reactUpdate,
       },
-    ]}
-  ,
+    ],
+  },
   // [
   //   {
   //     //api

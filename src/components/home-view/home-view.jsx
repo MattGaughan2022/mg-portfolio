@@ -23,11 +23,11 @@ export const HomeView = () => {
         />
         <h1>Hello, World!</h1>
         <br />
-        <Nav.Link as={Link} to="/projects">
-          <AwesomeButton type="primary" className="projectBtn">
+        <AwesomeButton type="primary" className="projectBtn">
+          <Nav.Link as={Link} to="/projects">
             Projects
-          </AwesomeButton>
-        </Nav.Link>
+          </Nav.Link>
+        </AwesomeButton>
       </div>
     </Row>
   );

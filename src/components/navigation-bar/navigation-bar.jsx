@@ -26,10 +26,6 @@ export const NavigationBar = () => {
   return (
     <Navbar data-bs-theme="dark" expand="lg">
       <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
-        {/* <Navbar.Brand as={Link} to="/home">
-          <img src="img/logoMattGaughan.png" alt="logo" />{" "}
-        </Navbar.Brand> */}
-        {/* hello */}
         <div>
           <h1>
             <Nav.Link as={Link} to="/">
@@ -40,33 +36,33 @@ export const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto navbar">
-            {/* {location.pathname !== "/" ? ( */}
             <>
               <Nav.Link as={Link} to="/">
-                <button className="iconButton">
-                  <img
-                    src={home}
-                    className="imgBtn"
-                    alt="button to home page"
-                  />
+                <button className="navButton">
+                  <p className="btnText" alt="button to home page">
+                    Home
+                  </p>
                 </button>
               </Nav.Link>
               <Nav.Link as={Link} to="/about">
-                <button className="iconButton">
-                  <img
-                    src={about}
-                    className="imgBtn"
-                    alt="button to about page"
-                  />
+                <button className="navButton">
+                  <p className="btnText" alt="button to about page">
+                    About Me
+                  </p>
                 </button>
               </Nav.Link>
               <Nav.Link as={Link} to="/projects">
-                <button className="iconButton">
-                  <img
-                    src={work}
-                    className="imgBtn"
-                    alt="button to projects page"
-                  />
+                <button className="navButton">
+                  <p className="btnText" alt="button to projects page">
+                    Projects
+                  </p>
+                </button>
+              </Nav.Link>
+              <Nav.Link as={Link} to="/">
+                <button className="navButton">
+                  <p className="btnText" alt="button to my work experience">
+                    My Work
+                  </p>
                 </button>
               </Nav.Link>
             </>
